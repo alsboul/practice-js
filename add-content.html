@@ -17,10 +17,10 @@
         </script>
         <p>Click the button to display a dialog box which will ask for your favorite drink.</p>
 
-        <button onclick="myFunction()">Try it</button>
+        <button onclick="food()">Try it</button>
         
         <script>
-        function myFunction() {
+        function food() {
           var text;
           var favDrink = prompt("What's your favorite cocktail drink?", "Daiquiri");
           switch(favDrink) {
@@ -39,6 +39,20 @@
           document.getElementById("demo").innerHTML = text;
         }
         </script>
+        <p>Click the button to demonstrate the prompt box.</p>
+
+        <button onclick="myFunction()">your name</button>
+        
+        <script>
+        function myFunction() {
+          var person = prompt("Please enter your name", "Harry Potter");
+          if (person != null) {
+            document.getElementById("demo").innerHTML =
+            "Hello " + person + "! How are you today?";
+          }
+        }
+        </script>
+        
         <p>For all orders and inquiries please call<em>555-3344</em></p>
     </body>
 </html>
